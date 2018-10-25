@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/20 21:43:26 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/20 21:43:28 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+crontab -e
+
+/* A user can schedule regular tasks using the "crontab -e" command to make */
+/* or edit files stored in the "/var/spool/cron/crontabs/USER_NAME" FILE.   */
+/* You can also use the "/etc/crontab" FILE or add additonal FILES to the 	*/
+/* "/etc/cron.d" directory.													*/
+
+/* Must be logged in as root user to do use this command */

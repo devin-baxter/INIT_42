@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/21 16:11:48 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/21 16:11:50 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+echo "apt-get update -y && \
+apt-get upgrade -y >> /var/log/update_script.log" > dailyUpdate.sh
+chmod 755 dailyUpdate.sh
+sudo mv dailyUpdate.sh /etc/cron.daily
+echo "* 4 * * 1 root /etc/cron.daily/dailyUpdate.sh" | crontab
+crontab -l
+
+/* Must be logged in as root user to do use this command */

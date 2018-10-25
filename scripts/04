@@ -1,0 +1,37 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/21 16:12:01 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/21 16:12:02 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+TARGET=/etc/crontab
+BACKUP=/etc/.crontab_backup
+
+if [ ! -e $BACKUP ]; then
+	echo "Backup does not exist"
+	cp $TARGET $BACKUP
+	exit 0
+fi
+
+MD5=`md5sum $TARGET | awk '{ print $1 }'`
+MD5_BACKUP=`md5sum $BACKUP | awk '{ print $1 }'`
+
+if [ -z $MD5 ] | [ -z $MD5_BACKUP ]; then
+	echo "MD5 is empty."
+fi
+
+if [ "$MD5" != "$MD5_BACKUP" ]; then
+	echo "Crontab has been modified" | mail -s "Report" root
+fi
+
+cp $TARGET $BACKUP
+
+/* Must be logged in as root user to do use this command */

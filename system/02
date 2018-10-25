@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/20 21:41:51 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/20 21:41:52 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+sudo nano /etc/hostname
+
+/* This command allows you to edit and rename the Debian virtual machine */
+/* you are working on if you are logged on as a root or admin user.      */

@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/20 21:42:31 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/20 21:42:32 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+/* The RSA keys that are generated are stored in "~/.ssh/id_rsa" and     */
+/* "~/.ssh/id_rsa.pub" using the "ssh-keygen -t rsa" command line input. */

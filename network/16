@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: debaxter <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/02 12:09:22 by debaxter          #+#    #+#              #
+#    Updated: 2018/10/02 12:09:24 by debaxter         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+sudo echo "46.19.122.85		intra.42.fr" >> /etc/hosts
+
+/* The /etc/hosts file contains the IP address of different network nodes */
+/* on a computer network. A system administrator can reroute hostnames to */
+/* different IP addresses by editing this file.							  */
